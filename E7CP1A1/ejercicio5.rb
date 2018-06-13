@@ -5,4 +5,12 @@ h = Hash[meses.zip ventas]
 
 h_invertido = h.invert
 
-puts h_invertido
+puts "El hash invertido es: #{h_invertido}"
+
+def max_value(hash)
+  max = hash.max_by{ |k,v| v }
+end
+
+max_v = max_value(h_invertido)
+
+puts "El valor mayor es: #{max_v}"
